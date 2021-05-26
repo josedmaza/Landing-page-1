@@ -28,7 +28,7 @@ The main purpose of this project is put in practice the content learned during t
 - [How to Scroll To the Top](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 - [GetBoundingClientRect Method](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
 
-##File structure
+## File structure
 
 The file structure is:
 
