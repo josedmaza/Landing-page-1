@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/70a46f3fdb.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+
+ 
+</head>
+<body>
+  <button  class="scrollToTopBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header" id="header">
+    <nav class="navbar__menu">
+     
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  
+  <main>
+    <header class="main__hero">
+      <div id="header_wrapper">
+          <div class="header_textContainer">
+              <h1>Hello, my name is Jose Daniel Maza.</h1>
+              <p> I'm a frontend developer from <span class="yellow">Co</span><span class="blue">lom</span><span class="red">bia</span>
+                  , and building websites is my passion. </p>
+              <div>
+                <a href="CV Jose Daniel Maza Arnedo.pdf" download="" class="button"><span>Download my cv</span></a>
+              </div>
+          </div>
+          <div class="header_imageContainer">
+            <img src="Img/heroimage2.jpg" alt="Hero">
+        </div>
+      </div>
+        
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="About me" class="your-active-class">
+      <div class="landing__container">
+        <h2>A little bit about me</h2>
+        <p>His focus it's on web development, which he is getting certified. Professional english level, outside the box-thinker as well as self-taughtperson.</p>
+
+        <p>Some of the technologies I dominate include: HTML5, CSS3, JavaScript, Git and boostrap</p>
+        <div class="icon_container">
+          <i class="icon fab fa-html5" id="html-icon"></i>
+          <i class="icon fab fa-css3-alt"id="css3-icon"></i>
+          <i class="icon fab fa-js-square"id="js-icon"></i>
+          <i class="icon fab fa-git-square"id="git-icon"></i>
+          <i class="icon fab fa-bootstrap"id="bootstrap-icon"></i>
+          
+
+        </div>
+      </div>
+    </section>
+    <section id="section2" data-nav="Proyects">
+      <div class="landing__container">
+        <h2>Featured Projects:</h2>
+        <div class="proyects_container">
+          <div class="proyect_text">
+            <h3>Coding the Static Restaurant Site</h3>
+            <p>It was an interesting project since I developed a lot of skills understanding what is needed to build a real web site for business
+            <strong>Technologies used:</strong>
+            </p>
+            <ul class="tecnologies_list">
+              <li>Html</li>
+              <li>Css</li>
+              <li>Boostrap</li>
+            </ul>
+          </div>
+          <div class="proyect_image">
+            <img src="Img/restaurant.jpg" alt="Restaurants proyect">
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="section3" data-nav="Contact">
+      <div class="landing__container">
+        <h2>Contact</h2>
+        
+        
+  
+          <div class="contact_container">
+            
+            <div class="contact_box">
+              <div class="left"></div>
+              <div class="right">
+              <form >
+                
+                <input type="text" class="field" id="name" placeholder="Your name">
+                <input type="email"class="field" placeholder="Your email" name="email" id="email">
+                <textarea name="" class="field area" placeholder="Message" id="" cols="20" rows="3"></textarea>
+                <button class="btn">Send</button>
+              </form>
+
+              </div>
+
+
+            </div>
+          </div>
+          </div>
+      </section>
+      <section id="section4" data-nav="Section 4">
+        
+        <div class="landing__container">
+          <h2>Section 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+            dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus
+            imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget
+            bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet
+            elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo
+            nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie
+            semper in tellus. Sed congue et odio sed euismod.</p>
+  
+          <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel
+            luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur
+            porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        </div>
+      </section>
+      
+
+          </div>
+          
+        
+        
+  </main>
+  <footer class="page__footer">
+    <div class="footer_container">
+
+      <h2>Jose Daniel Maza</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/jose-daniel-maza-arnedo-a246531a3/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a> 
+        </div>
+        
+          <div class="social-item">
+            <a href="https://github.com/josedmaza" target="_blank"> 
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+      </div>
+      <p>Copyright © 2021 Jose Daniel Maza. All rights reserved</p>
+  </footer>
+</body>
+</html>
