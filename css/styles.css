@@ -450,7 +450,7 @@ section.your-active-class .landing__container::after {
 
 .left {
   height: 100%;
-  background: url(/Img/heroImage.jpg);
+  background: url("/Img/heroImage.jpg");
   background-size: cover;
 }
 
